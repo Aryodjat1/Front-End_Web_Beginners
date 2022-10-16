@@ -23,6 +23,6 @@ newElement.innerHTML = '<b>Selamat datang</b> ke HTML kosong ini :)'; // ADD BOL
 const newImg = document.createElement('img'); //CREATE IMG ELEMENT
 newImg.setAttribute('src', 'https://picsum.photos/200/300'); // ADD IMG
 
-// GET ELEMENT ------------------------------------------------------------------------------------------------------------------------
+// MANIPULATION ELEMENT ------------------------------------------------------------------------------------------------------------------------
 
 // GET ELEMENT ------------------------------------------------------------------------------------------------------------------------
