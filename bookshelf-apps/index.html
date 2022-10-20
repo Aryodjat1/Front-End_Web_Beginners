@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshlef App | Submission Dicoding</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <section class="greeting">
+            <h2 class="title">
+                what'up, <input type="text" id="name" placeholder="Name Here">
+            </h2>
+        </section>
+
+        <section class="greeting">
+            <h3>CREATE A QUEUE</h3>
+
+            <form class="new-todo-form">
+                <h4>What is title book that you want to add ? </h4>
+                <input type="text" name="content" id="content" placeholder="e.g. make a video">
+
+                <h4>Who is the author ? </h4>
+                <input type="text" name="content" id="content" placeholder="e.g. make a video">
+
+                <h4>What date did you read it ? </h4>
+                <input type="text" name="content" id="content" placeholder="e.g. make a video">
+
+                <h4>pick a status</h4>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="status" id="status1" value="Complete">
+                        <span class bubble status>Complete</span>
+                        <div>Complete</div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="status" id="status2" value="notComplete">
+                        <span class bubble status>NotComplete</span>
+                        <div>NotComplete</div>
+                    </label>
+                </div>
+                <input type="submit" value="Add Book">
+            </form>
+        </section>
+
+        <section class="Complete">
+            <h3>Complete</h3>
+            <div class="list" id="complete">
+                <div class="complete-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble complete"></span>
+                    </label>
+
+                    <div class="complete-content">
+                        <input type="text" value="Habislah Gelpa Terbitlah Terang" readonly />
+                    </div>
+
+                    <div class="action">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="complete-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble complete"></span>
+                    </label>
+
+                    <div class="complete-content">
+                        <input type="text" value="Habislah Gelpa Terbitlah Terang" readonly />
+                    </div>
+
+                    <div class="action">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="uncomplete">
+            <h3>Complete</h3>
+            <div class="list" id="uncomplete">
+                <div class="uncomplete-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble uncomplete"></span>
+                    </label>
+
+                    <div class="uncomplete-content">
+                        <input type="text" value="">
+                    </div>
+
+                    <div class="action">
+                        <button class="edit">Selesai</button>                        
+                    </div>
+                </div>
+
+                <div class="uncomplete-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble uncomplete"></span>
+                    </label>
+
+                    <div class="uncomplete-content">
+                        <input type="text" value="" />
+                    </div>
+
+                    <div class="action">
+                        <button class="edit">Selesai</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
