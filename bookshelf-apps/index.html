@@ -20,7 +20,7 @@
 
 <body>
     <!-- App Wrapper -->
-    <main class="app">
+    <main>
         <!-- Greeting -->
         <section class="titleApp">
             <h2 class="title">
@@ -38,8 +38,8 @@
                 <h3>Author</h3>
                 <input type="text" placeholder="Author" name="author" id="author" />
 
-                <h3>Date</h3>
-                <input type="date" placeholder="00/00/0000" name="date" id="date" />
+                <h3>Year</h3>
+                <input type="number" placeholder="Year" name="year" id="year" />
 
                 <h3>Pick a status</h3>
                 <div class="options">
@@ -61,14 +61,14 @@
         <!-- End of New Todo -->
 
         <!-- Todo List -->
-        <section class="book-status">
-            <h2>Uncomplete</h2>
-            <div class="list" id="todo-list"></div>
+        <section class="container">
+            <h2 class="container-header">Uncomplete</h2>            
+            <div class="list" id="books"></div>
         </section>
 
-        <section class="book-status">
-            <h2>Complete</h2>
-            <div class="list" id="todo-list"></div>
+        <section class="container">
+            <h2 class="container-header">Complete</h2>
+            <div class="list" id="completed-books"></div>
         </section>
         <!-- End of Todo List -->
 
