@@ -1,125 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookshlef App | Submission Dicoding</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- End of CSS Import -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <!-- End of Fonts -->
 </head>
+
 <body>
+    <!-- App Wrapper -->
     <main class="app">
-        <section class="greeting">
+        <!-- Greeting -->
+        <section class="titleApp">
             <h2 class="title">
-                what'up, <input type="text" id="name" placeholder="Name Here">
+                Bookshelf App | by Aryo Djati
             </h2>
         </section>
+        <!-- End of Greeting -->
 
-        <section class="greeting">
-            <h3>CREATE A QUEUE</h3>
+        <!-- New Todo -->
+        <section class="create-container">            
+            <form id="book-form">
+                <h3>Title</h3>
+                <input type="text" placeholder="Title" name="title" id="title" />
 
-            <form class="new-todo-form">
-                <h4>What is title book that you want to add ? </h4>
-                <input type="text" name="content" id="content" placeholder="e.g. make a video">
+                <h3>Author</h3>
+                <input type="text" placeholder="Author" name="author" id="author" />
 
-                <h4>Who is the author ? </h4>
-                <input type="text" name="content" id="content" placeholder="e.g. make a video">
+                <h3>Date</h3>
+                <input type="date" placeholder="00/00/0000" name="date" id="date" />
 
-                <h4>What date did you read it ? </h4>
-                <input type="text" name="content" id="content" placeholder="e.g. make a video">
-
-                <h4>pick a status</h4>
-                <div class="option">
+                <h3>Pick a status</h3>
+                <div class="options">
                     <label>
-                        <input type="radio" name="status" id="status1" value="Complete">
-                        <span class bubble status>Complete</span>
+                        <input type="radio" name="status" id="status1" value="Complete" />
+                        <span class="bubble complete"></span>
                         <div>Complete</div>
                     </label>
-
                     <label>
-                        <input type="radio" name="status" id="status2" value="notComplete">
-                        <span class bubble status>NotComplete</span>
-                        <div>NotComplete</div>
+                        <input type="radio" name="status" id="status2" value="Uncomplete" />
+                        <span class="bubble uncomplete"></span>
+                        <div>Uncomplete</div>
                     </label>
                 </div>
-                <input type="submit" value="Add Book">
+
+                <input type="submit" value="Add Books" />
             </form>
         </section>
+        <!-- End of New Todo -->
 
-        <section class="Complete">
-            <h3>Complete</h3>
-            <div class="list" id="complete">
-                <div class="complete-item">
-                    <label>
-                        <input type="checkbox">
-                        <span class="bubble complete"></span>
-                    </label>
-
-                    <div class="complete-content">
-                        <input type="text" value="Habislah Gelpa Terbitlah Terang" readonly />
-                    </div>
-
-                    <div class="action">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
-
-                <div class="complete-item">
-                    <label>
-                        <input type="checkbox">
-                        <span class="bubble complete"></span>
-                    </label>
-
-                    <div class="complete-content">
-                        <input type="text" value="Habislah Gelpa Terbitlah Terang" readonly />
-                    </div>
-
-                    <div class="action">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div>
-            </div>
+        <!-- Todo List -->
+        <section class="book-status">
+            <h2>Uncomplete</h2>
+            <div class="list" id="todo-list"></div>
         </section>
 
-        <section class="uncomplete">
-            <h3>Complete</h3>
-            <div class="list" id="uncomplete">
-                <div class="uncomplete-item">
-                    <label>
-                        <input type="checkbox">
-                        <span class="bubble uncomplete"></span>
-                    </label>
-
-                    <div class="uncomplete-content">
-                        <input type="text" value="">
-                    </div>
-
-                    <div class="action">
-                        <button class="edit">Selesai</button>                        
-                    </div>
-                </div>
-
-                <div class="uncomplete-item">
-                    <label>
-                        <input type="checkbox">
-                        <span class="bubble uncomplete"></span>
-                    </label>
-
-                    <div class="uncomplete-content">
-                        <input type="text" value="" />
-                    </div>
-
-                    <div class="action">
-                        <button class="edit">Selesai</button>
-                    </div>
-                </div>
-            </div>
+        <section class="book-status">
+            <h2>Complete</h2>
+            <div class="list" id="todo-list"></div>
         </section>
+        <!-- End of Todo List -->
 
     </main>
+    <!-- End of App Wrapper -->
+
+    <!-- JS Import -->
     <script src="main.js"></script>
+    <!-- End of JS Import -->
 </body>
+
 </html>
