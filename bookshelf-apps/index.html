@@ -6,31 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookshelf</title>
-    <!-- CSS Import -->
+
     <link rel="stylesheet" href="style.css" />
-    <!-- End of CSS Import -->
-    <!-- Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <!-- End of Fonts -->
 </head>
 
 <body>
-    <!-- App Wrapper -->
     <main>
-        <!-- Greeting -->
         <section class="titleApp">
             <h2 class="title">
                 Bookshelf App | by Aryo Djati
             </h2>
         </section>
-        <!-- End of Greeting -->
 
-        <!-- New Todo -->
-        <section class="create-container">            
+        <section class="container">
             <form id="book-form">
                 <h3>Title</h3>
                 <input type="text" placeholder="Title" name="title" id="title" />
@@ -41,43 +35,31 @@
                 <h3>Year</h3>
                 <input type="number" placeholder="Year" name="year" id="year" />
 
-                <h3>Pick a status</h3>
-                <div class="options">
-                    <label>
-                        <input type="radio" name="status" id="status1" value="Complete" />
-                        <span class="bubble complete"></span>
-                        <div>Complete</div>
-                    </label>
-                    <label>
-                        <input type="radio" name="status" id="status2" value="Uncomplete" />
-                        <span class="bubble uncomplete"></span>
-                        <div>Uncomplete</div>
-                    </label>
-                </div>
-
                 <input type="submit" value="Add Books" />
             </form>
         </section>
-        <!-- End of New Todo -->
 
-        <!-- Todo List -->
-        <section class="container">
-            <h2 class="container-header">Uncomplete</h2>            
-            <div class="list" id="books"></div>
-        </section>
+        <div class="container">
+            <div class="search-box ">
+                <input type="text" placeholder="Search Here..." id="search">
+            </div>
+        </div>
 
-        <section class="container">
-            <h2 class="container-header">Complete</h2>
-            <div class="list" id="completed-books"></div>
-        </section>
-        <!-- End of Todo List -->
+        <div class="status">
+            <div class="container">
+                <h2 class="container-header">Uncomplete</h2>
+                <div class="list" id="books"></div>
+            </div>
+
+            <div class="container">
+                <h2 class="container-header">Complete</h2>
+                <div class="list" id="completed-books"></div>
+            </div>
+        </div>
 
     </main>
-    <!-- End of App Wrapper -->
 
-    <!-- JS Import -->
     <script src="main.js"></script>
-    <!-- End of JS Import -->
 </body>
 
 </html>
